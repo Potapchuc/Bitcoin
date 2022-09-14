@@ -1,0 +1,12 @@
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        System.out.print ("What is Bitcoin price today?");
+        float price = console.nextInt(); //Застосовуємо метод Float - згідно умови до 7 знаку після коми.
+        System.out.print ("How much $ do you have?");
+        float dollar = console.nextInt();
+        float result = dollar/price;  //Ділить курс на кількість валюти.
+        System.out.println("You can buy "  +  result +  " BTC");
+
+    }
